@@ -15,12 +15,12 @@ def build_btn(pin):
 
 GP_PINS = [board.GP9, board.GP8, board.GP7, board.GP19, board.GP20, board.GP21]
 BTN_TRIGGER = [
-    (Keycode.CONTROL, Keycode.F7),
-    (Keycode.CONTROL, Keycode.F8),
-    (Keycode.CONTROL, Keycode.F9),
-    (Keycode.CONTROL, Keycode.F10),
-    (Keycode.CONTROL, Keycode.F11),
-    (Keycode.CONTROL, Keycode.F12)
+    (Keycode.COMMAND, Keycode.L),
+    (Keycode.COMMAND, Keycode.C),
+    (Keycode.COMMAND, Keycode.V),
+    (Keycode.COMMAND, Keycode.Z),
+    (Keycode.COMMAND, Keycode.T),
+    (Keycode.COMMAND, Keycode.N)
 ]
 
 btns = [build_btn(pin) for pin in GP_PINS]
